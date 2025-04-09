@@ -1,0 +1,42 @@
+ .container {
+     border: 2px solid rgb(255, 255, 255);
+     width: 100vw;
+     height: 100vh;
+     background-color: #ffffff;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+
+
+ }
+
+ .box3 {
+     background-color: #165a72;
+     width: 50vw;
+     height: 100vh;
+     background-color: #165a72;
+ }
+
+ .box1 {
+     border: 2px solid #92cbdf;
+     width: 25vw;
+     height: 80vh;
+     background-color: #92cbdf;
+
+ }
+
+ .box2 {
+     border: 2px solid #2596be;
+     width: 25vw;
+     height: 19vh;
+     background-color: #2596be;
+ }
+
+ form {
+     margin-left: 20px;
+ }
+
+
+
+ 
