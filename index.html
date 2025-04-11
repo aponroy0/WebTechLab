@@ -10,17 +10,19 @@
 </head>
 
 <body>
+
     <!-- Main container -->
     <div class="container">
-
-
+        <div class="circle-container">
+            <img src="circle.jpg" alt="Profile" class="circle-image">
+        </div>
         <div class="box3">
             <!--Box for Registration form-->
             <div class="box1">
                 <h3 style="margin-left: 30px;">Registration</h3>
 
                 <div class="boxForm">
-                    <form>
+                    <form action=""> <!--Form starts Here-->
                         <label for="name">Name</label><br>
                         <input type="text" id="name" name="name"><br>
 
@@ -32,39 +34,118 @@
 
                         <label for="cpassword">Confirm Password</label><br>
                         <input type="password" id="cpassword" name="cpassword"><br>
+                        <br>
 
                         <label for="country">Country</label><br>
-                        <input type="text" id="country" name="country"><br>
-                    
-                      <div>
-                        <p>Gender</p>
-                        <input type="radio" id="male" name="fav_language" value="Male">
-                        <label for="male">Male</label><br>
+                        <select id="country" name="country">
+                            <option value="">Select Country</option>
+                            <option value="USA">United States</option>
+                            <option value="UK">United Kingdom</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Germany">Germany</option>
+                            <option value="France">France</option>
+                            <option value="Japan">Japan</option>
+                            <option value="China">China</option>
+                            <option value="India">India</option>
+                            <option value="Bangladesh">Bangladesh</option>
+                        </select>
 
-                        <input type="radio" id="female" name="fav_language" value="Female">
-                        <label for="female">Female</label><br>
-                      </div>  
+                        <div style="margin-bottom: 10px;">
+                            <p>Gender</p>
+                            <input type="radio" id="male" name="fav_language" value="Male">
+                            <label for="male">Male</label><br>
 
- 
+                            <input type="radio" id="female" name="fav_language" value="Female">
+                            <label for="female">Female</label><br>
+                        </div>
+                        <label for="dob">DOB:</label>
+                        <input type="date" id="dob" name="dob"><br>
+
+
                         <br>
-                        <form action="action_page.php">
-                            <label for="dob">DOB:</label>
-                            <input type="date" id="dob" name="dob"><br>
-                        </form>
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                        <label for="vehicle1">I agree to terms & condition.</label><br>
+                        <input type="submit" value="Submit" onclick="return validate()">
 
 
-                       <div style="margin: 20px;"
-                        <form action="action_page.php">
-                            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                            <label for="vehicle1">I agree to terms & condition.</label><br>
-                            <input type="submit" value="Submit">
-                        </form>
-                       </div>
+
+                    </form> <!--Form ends Here-->
+                    <script>
+                        function validate() {
+                            // Name validation
+                            let x = document.getElementById('name');
+                            let y = /\d/.test(x.value); // REGEX
+                            if (y) {
+                                alert("Name is Alpaneumeric.");
+                                return false;
+                            }
 
 
-                    </form>
+                            // Email validation
+                            let email = document.getElementById('email');
+                            let emailFormat = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value);
+                            if (!emailFormat) {
+                                alert("Invalid email format.");
+                                return false;
+                            }
+
+                            // Password validation
+                            let password = document.getElementById('password');
+                            let firstpass = password.value;
+                            let cpassword = document.getElementById('cpassword');
+                            let secondpass = cpassword.value;
+                            if (firstpass === "" || firstpass.length < 6) {
+                                alert("Password must be at least 6 characters.");
+                                return false;
+                            }
+                            if (firstpass !== secondpass) {
+                                alert("Passwords do not match.");
+                                return false;
+                            }
+
+                            // Country validation
+                            let country = document.getElementById('country').value;
+                            if (country === "") {
+                                alert("Country cannot be empty.");
+                                return false;
+                            }
+
+                            // Gender validation
+                            let male = document.getElementById('male');
+                            let m = male.checked;
+                            let female = document.getElementById('female');
+                            let f = female.checked;
+                            if (!m && !f) {
+                                alert("Please select a gender.");
+                                return false;
+                            }
+
+                            // DOB validation
+                            let dob = document.getElementById('dob').value;
+                            if (dob === "") {
+                                alert("Please enter your date of birth.");
+                                return false;
+                            }
+
+                            // Terms & Conditions checkbox
+                            let checkbox = document.getElementById('vehicle1');
+                            let c = checkbox.checked;
+                            if (!c) {
+                                alert("You must agree to the terms and conditions.");
+                                return false;
+                            }
+
+                            // All validations passed
+                            alert("Form submitted successfully!");
+                            return true;
+                        }
+                    </script>
+
+
                 </div>
             </div><!--Box 1 ends Here-->
+
             <div class="box2"></div>
 
         </div><!--Box 3 ends Here-->

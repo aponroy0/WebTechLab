@@ -1,7 +1,23 @@
- .container {
+.circle-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.circle-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #000000; /* Optional: add a border */
+}
+
+
+.container {
      border: 2px solid rgb(255, 255, 255);
      width: 100vw;
-     height: 100vh;
+     height: 130vh;
      background-color: #ffffff;
      display: flex;
      flex-direction: column;
@@ -12,6 +28,7 @@
  }
 
  .box3 {
+    border : 2px solid black;
      background-color: #165a72;
      width: 50vw;
      height: 100vh;
