@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .circle-container {
     display: flex;
     justify-content: center;
@@ -10,50 +14,92 @@
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #000000; /* Optional: add a border */
+    border: 3px solid #000000;
+
 }
 
 
 .container {
-     border: 2px solid rgb(255, 255, 255);
-     width: 100vw;
-     height: 150vh;
-     background-color: #ffffff;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
+    border: 2px solid rgb(255, 255, 255);
+    width: 100vw;
+    height: 190vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 
- }
+}
 
- .box3 {
-    border : 2px solid black;
-     background-color: #165a72;
-     width: 50vw;
-     height: 120vh;
-     background-color: #165a72;
- }
+.box3 {
+    border: 2px solid black;
+    background-color: #165a72;
+    width: 50vw;
+    height: 150vh;
+    background-color: #165a72;
+}
 
- .box1 {
-     border: 2px solid #92cbdf;
-     width: 25vw;
-     height: 90vh;
-     background-color: #92cbdf;
+.box1 {
+    border: 2px solid #92cbdf;
+    width: 25vw;
+    height: 110vh;
+    background-color: #92cbdf;
 
- }
+}
 
- .box2 {
-     border: 2px solid #2596be;
-     width: 25vw;
-     height: 29vh;
-     background-color: #2596be;
- }
+.box2 {
+    border: 2px solid #2596be;
+    width: 25vw;
+    height: 39vh;
+    background-color: #2596be;
 
- form {
-     margin-left: 20px;
- }
+}
 
 
 
- 
+
+form {
+    margin-left: 20px;
+}
+
+.loginform {
+    margin: 20px;
+}
+
+.table {
+    position: relative;
+
+    width: 25vw;
+    height: 30vh;
+    left: 28vw;
+    bottom: 130vh;
+
+}
+
+table,
+th,
+td {
+    border: 2px solid black;
+    border-collapse: collapse;
+
+}
+
+th,
+td {
+    background-color: #92cbdf;
+    border-style: dotted;
+    text-align: center;
+
+
+}
+
+.box4 {
+
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 21vw;
+    height: 64vh;
+    left: 27.5vw;
+    bottom: 165.5vh;
+}

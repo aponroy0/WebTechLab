@@ -11,33 +11,43 @@
 
 <body>
 
-    <!-- Main container -->
-    <div class="container">
-        <div class="circle-container">
+    <div class="container"> <!-- Main container -->
+
+        <div class="circle-container"> <!--For Top image-->
             <img src="circle.jpg" alt="Profile" class="circle-image">
         </div>
-        <div class="box3">
-            <!--Box for Registration form-->
-            <div class="box1">
-                <h3 style="margin-left: 30px;">Registration</h3>
+        <h2>Air Quality Index</h2>
+
+        <div class="box3"> <!--Box 3 starts Here-->
+
+            <div class="box1"> <!--Box1 starts Here-->
+
+                <h3 style="margin-left: 23px; margin-top: 35px;">Sign Up</h3>
 
                 <div class="boxForm">
-                    <form action=""> <!--Form starts Here-->
+                    <form action="process.php" method="post"> <!--Form starts Here-->
+
                         <label for="name">Name</label><br>
-                        <input type="text" id="name" name="name"><br>
+                        <input type="text" id="name" name="name" placeholder="NAME"><br>
+                        <div id="data" style="height: 16px; color: brown; font-size: 15px;"></div>
 
                         <label for="email">Email</label><br>
-                        <input type="text" id="email" name="email"><br>
+                        <input type="text" id="email" name="email" placeholder="EMAIL">
+                        <div id="edata" style="height: 16px; color: brown; font-size: 15px;"></div>
+
 
                         <label for="password">Password</label><br>
-                        <input type="password" id="password" name="password"><br>
+                        <input type="password" id="password" name="password" placeholder="PASSWORD"> <br>
+                        <br>
 
                         <label for="cpassword">Confirm Password</label><br>
-                        <input type="password" id="cpassword" name="cpassword">
-                        <br>
+                        <input type="password" id="cpassword" name="cpassword" placeholder="CONFIRM PASSWORD">
+                        <div id="pdata" style="height: 16px; color: brown; font-size: smaller;"></div>
+
 
                         <label for="color">Favorite Color</label><br>
                         <input type="color" id="color" name="color"><br>
+                        <br>
 
 
                         <label for="country">Country</label><br>
@@ -54,43 +64,69 @@
                             <option value="India">India</option>
                             <option value="Bangladesh">Bangladesh</option>
                         </select>
+                        <div id="cdata" style="height: 15px; color: brown; font-size: smaller;"></div>
+
 
                         <div style="margin-bottom: 10px;">
                             <p>Gender</p>
-                            <input type="radio" id="male" name="fav_language" value="Male">
+                            <input type="radio" id="male" name="Gender" value="Male">
                             <label for="male">Male</label><br>
 
-                            <input type="radio" id="female" name="fav_language" value="Female">
+                            <input type="radio" id="female" name="Gender" value="Female">
                             <label for="female">Female</label><br>
                         </div>
+                        <div id="gdata" style="height: 20px; color: brown; font-size: smaller;"></div>
+
+
+
                         <label for="dob">DOB:</label>
                         <input type="date" id="dob" name="dob"><br>
+                        <div id="ddata" style="height: 15px; color: brown; font-size: smaller;"></div>
+
 
 
                         <br>
                         <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                        <label for="vehicle1">I agree to terms & condition.</label><br>
-                        <input type="submit" value="Submit" onclick="return validate()">
+                        
+                        <label for="vehicle1">
+                            I agree to the <a href="terms.html" target="_blank">terms & conditions</a>.
+                        </label>
+                        <div id="tdata" style="height: 20px; color: brown; font-size: smaller;"></div>
+
+                        <input type="submit" name="submit" value="Submit" onclick="return validate()"
+                            style="background-color :rgb(97, 134, 245); color:azure">
 
 
 
                     </form> <!--Form ends Here-->
-                    <script>
+
+                    <script> //script start Here
+
                         function validate() {
+
+                            document.getElementById('cdata').innerHTML = "";
+
                             // Name validation
                             let x = document.getElementById('name');
                             let y = /\d/.test(x.value); // REGEX
                             if (y) {
-                                alert("Name is Alpaneumeric.");
+                                document.getElementById('data').innerHTML = "ALPHANUMERIC";
                                 return false;
+                            }
+                            else {
+                                document.getElementById('data').innerHTML = "";
+
                             }
 
 
                             // Email validation
                             let email = document.getElementById('email');
                             let emailFormat = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value);
-                            if (!emailFormat) {
-                                alert("Invalid email format.");
+                            if (emailFormat) {
+                                document.getElementById('edata').innerHTML = "";
+                            }
+                            else {
+                                document.getElementById('edata').innerHTML = "INVALID EMAIL FORMAT";
                                 return false;
                             }
 
@@ -100,63 +136,155 @@
                             let cpassword = document.getElementById('cpassword');
                             let secondpass = cpassword.value;
                             if (firstpass === "" || firstpass.length < 6) {
-                                alert("Password must be at least 6 characters.");
+                                document.getElementById('pdata').innerHTML = "Password must be at least 6 characters.";
                                 return false;
                             }
                             if (firstpass !== secondpass) {
-                                alert("Passwords do not match.");
+                                document.getElementById('pdata').innerHTML = "Passwords do not match.";
                                 return false;
+                            }
+                            else {
+                                document.getElementById('pdata').innerHTML = "";
                             }
 
                             // Country validation
                             let country = document.getElementById('country').value;
-                            if (country === "") {
-                                alert("Country cannot be empty.");
+                            if (country) {
+                                document.getElementById('cdata').innerHTML = "";
+
+                            }
+                            else {
+                                document.getElementById('cdata').innerHTML = "Country must be selected";
                                 return false;
                             }
+
 
                             // Gender validation
                             let male = document.getElementById('male');
                             let m = male.checked;
                             let female = document.getElementById('female');
                             let f = female.checked;
-                            if (!m && !f) {
-                                alert("Please select a gender.");
+                            if (m || f) {
+                                document.getElementById('gdata').innerHTML = "";
+                            }
+                            else if (!m && !f) {
+                                document.getElementById('gdata').innerHTML = "Gender must be selected";
                                 return false;
+
                             }
 
                             // DOB validation
                             let dob = document.getElementById('dob').value;
                             if (dob === "") {
-                                alert("Please enter your date of birth.");
+                                document.getElementById('ddata').innerHTML = "Date must be selected.";
                                 return false;
+
                             }
+                            else {
+                                document.getElementById('ddata').innerHTML = "";
+
+
+                            }
+
 
                             // Terms & Conditions checkbox
                             let checkbox = document.getElementById('vehicle1');
                             let c = checkbox.checked;
                             if (!c) {
-                                alert("You must agree to the terms and conditions.");
+                                document.getElementById('tdata').innerHTML = "You must agree to the terms and conditions.";
                                 return false;
                             }
 
-                
+
+
                             alert("Form submitted successfully!");
                             return true;
                         }
                     </script>
 
-
                 </div>
-            </div><!--Box 1 ends Here-->
 
-            <div class="box2"></div>
+            </div> <!--Box 1 ends Here-->
+
+            <div class="box2"> <!--Box 2 starts Here-->
+
+                <form class="loginform">
+                    <h3>Sign In</h3>
+
+                    <label for="first">Username:</label>
+                    <input type="text" id="first" name="first" placeholder="Enter your Username">
+                    <br> <br>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your Password"><br>
+                    <br>
+                    <button type="submit" style="background-color :rgb(97, 134, 245); color:azure"> Submit </button>
+
+                </form>
+            </div> <!--Box 2 ends Here-->
+
+
+            <div class="table">
+                <table style="width: 20vw; height: 60vh;">
+                    <tr>
+                        <th style="background-color:antiquewhite">City</th>
+                        <th style = "background-color:antiquewhite">AQI</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>John Doe</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jane Smith</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Michael Brown</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Emily Davis</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Daniel Wilson</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Olivia Taylor</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>David Johnson</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Emma Martinez</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>James Anderson</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Isabella Thomas</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="box4">
+   
+                <h2 style="padding-left:20%; padding-top: 60%;"> Login Required </h2>
+            
+        </div>
+
+
 
         </div><!--Box 3 ends Here-->
 
 
 
-    </div>
+    </div> <!-- Main container ends Here-->
 </body>
 
 </html>

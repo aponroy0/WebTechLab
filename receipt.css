@@ -1,0 +1,33 @@
+/* Receipts */
+
+.contain {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    width: 100vw;
+    height: 100vh;
+}
+
+.bc {
+
+    border: 2px solid black;
+    background-color: #92cbdf;
+    width: 50vw;
+    height: 100vh;
+}
+
+.r {
+    position: relative;
+    margin: 70px;
+    margin-left: 90px;
+    margin-right: 90px;  
+    padding-left: 160px;
+    padding-bottom: 30px;
+
+
+    background-color: rgb(247, 247, 237);
+    border: 2px solid rgb(232, 222, 188);
+}
