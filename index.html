@@ -52,17 +52,30 @@
 
                         <label for="country">Country</label><br>
                         <select id="country" name="country">
+                            <label for="country">Select Country:</label>
+
                             <option value="">Select Country</option>
-                            <option value="USA">United States</option>
-                            <option value="UK">United Kingdom</option>
-                            <option value="Canada">Canada</option>
-                            <option value="Australia">Australia</option>
-                            <option value="Germany">Germany</option>
-                            <option value="France">France</option>
-                            <option value="Japan">Japan</option>
-                            <option value="China">China</option>
-                            <option value="India">India</option>
                             <option value="Bangladesh">Bangladesh</option>
+                            <option value="India">India</option>
+                            <option value="Ireland">Ireland</option>
+                            <option value="Spain">Spain</option>
+                            <option value="United States of America">United States</option>
+                            <option value="Japan">Japan</option>
+                            <option value="Italy">Italy</option>
+                            <option value="England">England</option>
+                            <option value="France">France</option>
+                            <option value="Portugal">Portugal</option>
+                            <option value="China">China</option>
+                            <option value="South Korea">South Korea</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Netherland">Netherland</option>
+                            <option value="United Arab Emirates">United Arab Emirates</option>
+                            <option value="Denmark">Denmark</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Switzerland">Switzerland</option>
+                            <option value="Belgium">Belgium</option>
+
                         </select>
                         <div id="cdata" style="height: 15px; color: brown; font-size: smaller;"></div>
 
@@ -79,7 +92,7 @@
 
 
 
-                        <label for="dob">DOB:</label>
+                        <label for="dob">DOB:</label><br>
                         <input type="date" id="dob" name="dob"><br>
                         <div id="ddata" style="height: 15px; color: brown; font-size: smaller;"></div>
 
@@ -87,7 +100,7 @@
 
                         <br>
                         <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                        
+
                         <label for="vehicle1">
                             I agree to the <a href="terms.html" target="_blank">terms & conditions</a>.
                         </label>
@@ -200,7 +213,9 @@
                             alert("Form submitted successfully!");
                             return true;
                         }
-                    </script>
+                    </script><!--Script ends Here-->
+                    
+
 
                 </div>
 
@@ -208,17 +223,17 @@
 
             <div class="box2"> <!--Box 2 starts Here-->
 
-                <form class="loginform">
+                <form class="loginform" action="login.php" method="post">
                     <h3>Sign In</h3>
 
-                    <label for="first">Username:</label>
+                    <label for="first">Email:</label><br>
                     <input type="text" id="first" name="first" placeholder="Enter your Username">
                     <br> <br>
 
-                    <label for="password">Password:</label>
+                    <label for="password">Password:</label><br>
                     <input type="password" id="password" name="password" placeholder="Enter your Password"><br>
                     <br>
-                    <button type="submit" style="background-color :rgb(97, 134, 245); color:azure"> Submit </button>
+                    <button type="submit" id="loginsubmit" style="background-color :rgb(97, 134, 245); color:azure" name="submit"> Submit </button>
 
                 </form>
             </div> <!--Box 2 ends Here-->
@@ -274,7 +289,7 @@
             </div>
             <div class="box4">
    
-                <h2 style="padding-left:20%; padding-top: 60%;"> Login Required </h2>
+                <h2 style="padding-left:20%; padding-top: 60%;"> Login Required !</h2>
             
         </div>
 

@@ -16,7 +16,7 @@ body {
 
 .page{
     box-sizing: border-box;
-    border: 2px solid black;
+    border: 2px solid rgb(0, 0, 0);
     background-color: #92cbdf;
     width: 50vw;
     height: 100vh;
