@@ -22,6 +22,11 @@ if ($count == 1) {
       header("refresh: 0; url = requestaqi.php");
       exit();
 }
+elseif($uname == 'admin' && $pass==654321){
+      header("refresh: 0; url = admin.php");
+      exit();
+
+}
 
 
 else{

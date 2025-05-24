@@ -1,0 +1,36 @@
+.container-admin {
+
+    border: 2px solid rgb(255, 255, 255);
+    width: 100vw;
+    height: 110vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.table {
+
+    position: relative;
+
+    border: 2px solid black;
+    background-color: #92cbdf;
+
+    width: 50vw;
+    height: 109vh;
+
+}
+
+.innertable {
+    margin: 120px;
+    background-color: white;
+
+}
+
+.username {
+    position: relative;
+    bottom: 110px;
+    right: 375px;
+}
