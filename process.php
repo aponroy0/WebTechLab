@@ -81,6 +81,7 @@ if (isset($_POST['submit'])) {
 
      }
            //Cancel and confirm button using session.
+           echo"<br>";
            echo '<form method="post" action=""> 
            <button type="submit" style="background-color: rgb(97, 134, 245); color: azure;" name="cancel">Cancel</button>
           </form>';
