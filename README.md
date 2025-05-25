@@ -1,6 +1,6 @@
 # 🌍 AQI (Air Quality Index) Website
 
-## 📘 About the Project
+##  About the Project
 
 This is a simple website that shows the **Air Quality Index (AQI)** for different countries. I built it using **HTML, CSS, JavaScript**, and **PHP** as part of my learning journey.
 
@@ -8,7 +8,7 @@ The main goal was to get familiar with how these web technologies work together.
 
 ---
 
-## 🚀 What It Can Do
+##  What It Can Do
 
 The website has **7 pages** with different features:
 
