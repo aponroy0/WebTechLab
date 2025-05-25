@@ -1,4 +1,4 @@
-# 🌍 AQI (Air Quality Index) Website
+#  AQI (Air Quality Index) Website
 
 ##  About the Project
 
@@ -45,26 +45,26 @@ Here are some screenshots from the website:
 
 ---
 
-## 🛠️ Tools & Technologies
+##  Tools & Technologies
 
 - **Frontend:** HTML, CSS, JavaScript  
 - **Backend:** PHP
 
 ---
 
-## 🎯 Why I Made This
+##  Why I Made This
 
 This project was part of my learning process. I wanted to understand how to build a basic website with both frontend and backend features. It’s not perfect, but it’s a great start. Learning by doing really helps.
 
 ---
 
-## 🙌 Special Thanks
+##  Special Thanks
 
 Big thanks to my **course teacher** for the support and guidance. Also, shoutout to the online tutorials and docs that helped me along the way.
 
 ---
 
-## 📂 How to Use
+##  How to Use
 
 To run this project on your local machine:
 
