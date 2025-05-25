@@ -45,7 +45,7 @@
         .aqicontainer {
 
             width: 100vw;
-            height: 130vh;
+            height: 160vh;
             background-color: white;
             display: flex;
             flex-direction: column;
@@ -59,7 +59,7 @@
             border: 2px solid black;
             background-color:white;
             width: 50vw;
-            height: 130vh;
+            height: 160vh;
             font-family: Arial, sans-serif;
             font-size: small;
             line-height: 1.6;
@@ -71,7 +71,7 @@
         .user{
 
         position:relative;
-        left: 565px;
+        left: 405px;
         bottom:65px;
         }
         

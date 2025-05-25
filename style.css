@@ -20,7 +20,7 @@
 .container {
     border: 2px solid rgb(255, 255, 255);
     width: 100vw;
-    height: 190vh;
+    height: 210vh;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -37,14 +37,14 @@
     background-color: #165a72;
     
     width: 50vw;
-    height: 150vh;
+    height: 170vh;
     background-color: #165a72;
 }
 
 .box1 {
     border: 2px solid #92cbdf;
     width: 25vw;
-    height: 110vh;
+    height: 120vh;
     background-color: #92cbdf;
 
 }
@@ -52,7 +52,7 @@
 .box2 {
     border: 2px solid #2596be;
     width: 25vw;
-    height: 39.05vh;
+    height: 49.05vh;
     background-color: #2596be;
 
 }

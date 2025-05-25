@@ -83,7 +83,6 @@ if (isset($_POST['submit'])) {
 
 
 ?>  
-<button type="submit" style="background-color :rgb(97, 134, 245); color:azure; padding:5px; margin-top:15px"> Confirm </button>
 
        </div>
       </div>

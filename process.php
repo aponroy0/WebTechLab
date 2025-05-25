@@ -81,11 +81,11 @@ if (isset($_POST['submit'])) {
 
      }
            //Cancel and confirm button using session.
-           echo '<form method="post" action="">
-             <br>
-            <button type="submit" style="background-color: rgb(97, 134, 245); color: azure;" name="cancel">Cancel</button>
+           echo '<form method="post" action=""> 
+           <button type="submit" style="background-color: rgb(97, 134, 245); color: azure;" name="cancel">Cancel</button>
           </form>';
           echo '<br><a href="index.html"  background-color: rgb(97, 134, 245); color: azure;"> <button style="background-color: rgb(97, 134, 245); color: azure;"> Confirm </button><a>';
+          
           //If confirm button is clicked then the information of user will be saved to the database..
 
           // The procedure here, I have used is session..

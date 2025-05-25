@@ -2,7 +2,7 @@
 
     border: 2px solid rgb(255, 255, 255);
     width: 100vw;
-    height: 110vh;
+    height: auto;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -13,18 +13,17 @@
 
 .table {
 
-    position: relative;
-
     border: 2px solid black;
     background-color: #92cbdf;
 
     width: 50vw;
-    height: 109vh;
+    height: 129vh;
+
 
 }
 
 .innertable {
-    margin: 120px;
+    margin:30px;
     background-color: white;
 
 }
