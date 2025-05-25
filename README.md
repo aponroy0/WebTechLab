@@ -6,7 +6,7 @@ This is a simple website that shows the **Air Quality Index (AQI)** for differen
 
 The main goal was to get familiar with how these web technologies work together. My course teacher helped me a lot during this project, and I also learned from various online sources. It’s just a basic setup, but it’s a good starting point for going deeper into web development.
 
----
+
 
 ##  What It Can Do
 
@@ -19,7 +19,7 @@ The website has **7 pages** with different features:
 - **Receipt Page** – Shows a receipt or summary of the selection.
 - **Terms & Conditions Page** – Explains the rules and usage terms.
 
----
+
 
 ## 🖼️ Screenshots
 
@@ -43,31 +43,22 @@ Here are some screenshots from the website:
 ### 6. Admin Panel  
 ![Admin Panel](images/admin_panel.png)
 
----
+
 
 ##  Tools & Technologies
 
 - **Frontend:** HTML, CSS, JavaScript  
 - **Backend:** PHP
 
----
+
 
 ##  Why I Made This
 
 This project was part of my learning process. I wanted to understand how to build a basic website with both frontend and backend features. It’s not perfect, but it’s a great start. Learning by doing really helps.
 
----
+
 
 ##  Special Thanks
 
 Big thanks to my **course teacher** for the support and guidance. Also, shoutout to the online tutorials and docs that helped me along the way.
 
----
-
-##  How to Use
-
-To run this project on your local machine:
-
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/yourusername/aqi-website.git
