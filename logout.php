@@ -17,6 +17,6 @@ header("refresh: 2; url = index.html");
     //Whenever we press logout. It removes the cookie.
     // What is the advantages of cookies?
     // --- 
-    setcookie("bgcolor",  time()-10); // remove cookie
+   // setcookie("bgcolor",  time()-10); // remove cookie
 
 ?>

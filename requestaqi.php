@@ -114,7 +114,7 @@
              <!-- 
              Here, we put php code into html code. Like we did in the div. It changes the bg color.
              -->
-            <div class="cbox" style="background-color: <?php echo $bgc ?> ";>
+            <div class="cbox" style="background-color: #92cbdf ";>
 
             <!-- 
              This div handles the upoload avater section at the top left corner.
