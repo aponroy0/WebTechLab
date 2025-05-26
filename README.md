@@ -21,27 +21,27 @@ The website has **7 pages** with different features:
 
 
 
-## 🖼️ Screenshots
+## Screenshots
 
 Here are some screenshots from the website:
 
 ### 1. Sign Up and Sign In  
-![Sign Up and Sign In](images/signup.png)
+![Sign Up and Sign In](images/1.png)
 
 ### 2. Terms & Conditions  
-![Terms and Conditions](images/terms.png)
+![Terms and Conditions](images/2.png)
 
 ### 3. Receipt  
-![Receipt](images/receipt.png)
+![Receipt](images/3.png)
 
 ### 4. Country Selection  
-![Country Selection](images/country_selection.png)
+![Country Selection](images/4.png)
 
 ### 5. AQI Results for Selected Countries  
-![AQI Display](images/aqi_display.png)
+![AQI Display](images/5.png)
 
 ### 6. Admin Panel  
-![Admin Panel](images/admin_panel.png)
+![Admin Panel](images/6.png)
 
 
 

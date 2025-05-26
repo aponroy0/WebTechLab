@@ -186,18 +186,33 @@
 
                             }
 
+                        
                             // DOB validation
-                            let dob = document.getElementById('dob').value;
-                            if (dob === "") {
+                               let dob = document.getElementById('dob').value;
+                               let dobMessage = document.getElementById('ddata');
+
+                              if (dob === "") {
                                 document.getElementById('ddata').innerHTML = "Date must be selected.";
                                 return false;
+                              } else {
+    // Calculate age
+    let birthDate = new Date(dob);
+    let today = new Date();
+    let age = today.getFullYear() - birthDate.getFullYear();
+    let m = today.getMonth() - birthDate.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+    }
 
-                            }
-                            else {
-                                document.getElementById('ddata').innerHTML = "";
+    // Check if user is at least 18
+    if (age < 18) {
+        document.getElementById('ddata').innerHTML = "You must be at least 18 years old to log in.";
+        return false;
+    } else {
+        document.getElementById('ddata').innerHTML = "";
+    }
+}
 
-
-                            }
 
 
                             // Terms & Conditions checkbox

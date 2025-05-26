@@ -2,6 +2,7 @@
 <?php
        
        // This block only runs when someone tries to login deriectly..
+       // session_start();
 
       if (!isset($_POST['submit'])) {
         session_start();
