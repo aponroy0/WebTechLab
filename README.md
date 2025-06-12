@@ -21,30 +21,6 @@ The website has **7 pages** with different features:
 
 
 
-## Screenshots
-
-Here are some screenshots from the website:
-
-### 1. Sign Up and Sign In  
-![Sign Up and Sign In](images/1.png)
-
-### 2. Terms & Conditions  
-![Terms and Conditions](images/2.png)
-
-### 3. Receipt  
-![Receipt](images/3.png)
-
-### 4. Country Selection  
-![Country Selection](images/4.png)
-
-### 5. AQI Results for Selected Countries  
-![AQI Display](images/5.png)
-
-### 6. Admin Panel  
-![Admin Panel](images/6.png)
-
-
-
 ##  Tools & Technologies
 
 - **Frontend:** HTML, CSS, JavaScript  
@@ -52,13 +28,4 @@ Here are some screenshots from the website:
 
 
 
-##  Why I Made This
-
-This project was part of my learning process. I wanted to understand how to build a basic website with both frontend and backend features. It’s not perfect, but it’s a great start. Learning by doing really helps.
-
-
-
-##  Special Thanks
-
-Big thanks to my **course teacher** for the support and guidance. Also, shoutout to the online tutorials and docs that helped me along the way.
 
